@@ -1,0 +1,22 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+artifacts/
+**/bin/
+**/obj/
+*.dll
+*.pdb
+*.nupkg
+*.snupkg
+
+# Rider / VS
+.idea/
+.vs/
+*.user
+
+# dotnet
+.dotnet-tool-install.json
+
+# OS
+.DS_Store
+Thumbs.db
