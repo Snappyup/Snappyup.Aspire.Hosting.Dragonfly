@@ -1,8 +1,8 @@
 <Project>
   <PropertyGroup>
     <AspNetCoreHealthChecksRedisPackageVersion>8.0.1</AspNetCoreHealthChecksRedisPackageVersion>
-    <AspireHostingPackageVersion>9.5.0</AspireHostingPackageVersion>
     <MicrosoftSourceLinkGitHubPackageVersion>10.0.203</MicrosoftSourceLinkGitHubPackageVersion>
+    <AspireHostingPackageVersion>13.2.4</AspireHostingPackageVersion>
   </PropertyGroup>
 
   <ItemGroup>
