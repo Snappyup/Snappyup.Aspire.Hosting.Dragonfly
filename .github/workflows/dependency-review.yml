@@ -1,0 +1,23 @@
+# Dependency Review: surfaces vulnerable dependencies introduced in PRs (free on GitHub).
+# https://docs.github.com/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review
+
+name: Dependency Review
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  dependency-review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Dependency Review
+        uses: actions/dependency-review-action@v4
+        with:
+          comment-summary-in-pr: always

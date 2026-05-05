@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            8.0.x
+            9.0.x
+
+      - name: Restore
+        run: dotnet restore Snappyup.Aspire.Hosting.Dragonfly.slnx
+
+      - name: Verify formatting (.editorconfig)
+        run: dotnet format Snappyup.Aspire.Hosting.Dragonfly.slnx --verify-no-changes --no-restore
+
+      - name: NuGet vulnerability audit
+        run: dotnet list Snappyup.Aspire.Hosting.Dragonfly.slnx package --vulnerable --include-transitive
+
+      - name: Build
+        run: dotnet build Snappyup.Aspire.Hosting.Dragonfly.slnx -c Release --no-restore
+
+      - name: Pack
+        run: dotnet pack Snappyup.Aspire.Hosting.Dragonfly.slnx -c Release --no-build -o ./artifacts
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: nuget-packages
+          path: artifacts/*.nupkg
