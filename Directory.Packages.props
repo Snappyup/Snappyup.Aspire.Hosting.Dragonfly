@@ -2,7 +2,7 @@
   <PropertyGroup>
     <MicrosoftSourceLinkGitHubPackageVersion>10.0.203</MicrosoftSourceLinkGitHubPackageVersion>
     <AspNetCoreHealthChecksRedisPackageVersion>9.0.0</AspNetCoreHealthChecksRedisPackageVersion>
-    <AspireHostingPackageVersion>13.2.4</AspireHostingPackageVersion>
+    <AspireHostingPackageVersion>13.3.0</AspireHostingPackageVersion>
   </PropertyGroup>
 
   <ItemGroup>
