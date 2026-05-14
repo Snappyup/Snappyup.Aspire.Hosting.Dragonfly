@@ -8,9 +8,9 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IsPackable>true</IsPackable>
     <PackageId>Snappyup.Aspire.Hosting.Dragonfly</PackageId>
-    <Version>1.0.0</Version>
-    <AssemblyVersion>2026.05.05.2351</AssemblyVersion>
-    <FileVersion>2026.05.05.2351</FileVersion>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>2026.05.14.2317</AssemblyVersion>
+    <FileVersion>2026.05.14.2317</FileVersion>
     <PackageTags>aspire;integration;hosting;dragonfly;redis;cache;caching</PackageTags>
     <Description>DragonflyDB support for .NET Aspire. Adds a Dragonfly resource (Redis-compatible) to an Aspire AppHost.</Description>
     <PackageReadmeFile>PackageReadme.md</PackageReadmeFile>
