@@ -5,7 +5,7 @@
     <AspireHostingPackageVersion>13.3.3</AspireHostingPackageVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageVersion Include="Aspire.Hosting" Version="13.4.4" />
+    <PackageVersion Include="Aspire.Hosting" Version="13.4.6" />
     <PackageVersion Include="AspNetCore.HealthChecks.Redis" Version="$(AspNetCoreHealthChecksRedisPackageVersion)" />
     <PackageVersion Include="MessagePack" Version="3.1.7" />
     <PackageVersion Include="MessagePack.Annotations" Version="3.1.7" />
